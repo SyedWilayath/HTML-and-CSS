@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    background: #000;
+}
+
+.background{
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+
+.text, .box{
+    margin-top: 45vh;
+    flex: 1;
+}
+
+.text{
+    margin-left: 10%;
+    font-weight: 300px;
+}
+
+.box{
+    
+}
+
+.text h1{
+    margin: 20px 0;
+    font-size: 90px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.text h4{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.text p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.text p a{
+    color: #fff;
+    font-weight: 700;
+}
+
+.form{
+    background: transparent;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input{
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.username, .password{
+    border-bottom: 1px solid;
+}
+::placeholder {
+  color: white;
+  opacity: 1; 
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
